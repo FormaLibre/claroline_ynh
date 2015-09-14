@@ -1,0 +1,53 @@
+{
+    "name": "Claroline Connect",
+    "id": "ClarolineConnect",
+    "description": {
+        "en": "Claroline Connect is an Open Source software to easily deploy a dedicated learning and online collaboration platform",
+	"fr": "Parce qu'apprendre est un acte de création, le gestionnaire d'apprentissage Claroline Connect permet à tous les utilisateurs, quel que soit leur statut (enseignant, apprenant, tuteur, etc.), d'être actifs ! (personnaliser son bureau, créer des espaces d'activité, agréger et produire des ressources... et  liker, commenter, taguer, etc.)"
+    },
+    "licence": "GPL-3",
+    "maintainer": {
+        "name": "Laurent Gruber",
+        "email": "laurent.gruber@claroline.com",
+        "url": "http://www.claroline.com"
+    },
+    "multi_instance": "false",
+    "arguments": {
+        "install" : [
+            {
+                "name": "domain",
+                "ask": {
+                    "en": "Choose a domain for ynhexample",
+		    "fr": "Choisir un domaine pour Claroline Connect"
+                },
+                "example": "example.com"
+            },
+            {
+                "name": "path",
+                "ask": {
+                    "en": "Choose a path for ynhexample",
+		    "fr": "Choisir un chemin pour Claroline Connect"
+                },
+                "example": "/example",
+                "default": "/example"
+            },
+            {
+                "name": "admin",
+                "ask": {
+                    "en": "Choose an admin user",
+		    "fr": "Choisir un utilisateur administrateur"
+                },
+                "example": "johndoe"
+            },
+            {
+                "name": "is_public",
+                "ask": {
+                    "en": "Is it a public application ?",
+		    "fr": "S'agit-il d'une application publique ?"
+                },
+                "choices": ["Yes", "No"],
+                "default": "Yes"
+            }
+        ]
+    }
+}
